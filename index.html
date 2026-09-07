@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Backend Engineer & AI/ML Developer</title>
+  <meta name="description" content="Portfolio of a Backend Engineer specializing in AI/ML and IoT. Explore projects, skills, and experience in building intelligent systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line-1">Hi, I'm</span>
+        <span class="line-2 gradient-text" id="typed-name">Your Name</span>
+      </h1>
+      <p class="hero-subtitle" id="typed-subtitle"></p>
+      <p class="hero-description">
+        I build intelligent backend systems, train machine learning models, and connect the physical world through IoT — turning complex problems into scalable, smart solutions.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">The <span class="gradient-text">Engineer</span> Behind the Code</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-side">
+          <div class="avatar-container">
+            <div class="avatar-icon-wrapper">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="avatar-ring avatar-ring-1"></div>
+            <div class="avatar-ring avatar-ring-2"></div>
+            <div class="avatar-badge ab-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>AI/ML</span>
+            </div>
+            <div class="avatar-badge ab-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+              <span>IoT</span>
+            </div>
+            <div class="avatar-badge ab-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <span>Backend</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-side">
+          <p class="about-text">
+            I'm a passionate <strong>Backend Engineer</strong> with deep expertise in <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Internet of Things</strong>. I love architecting robust, scalable systems that not only perform well — but think intelligently.
+          </p>
+          <p class="about-text">
+            From designing RESTful APIs and microservices to training neural networks and deploying ML pipelines to the edge, I thrive at the intersection of software engineering and intelligent systems.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">&#x1F916;</div>
+              <div>
+                <h4>AI &amp; Machine Learning</h4>
+                <p>Building and deploying intelligent models for real-world applications</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">&#x2699;&#xFE0F;</div>
+              <div>
+                <h4>Backend Systems</h4>
+                <p>Scalable APIs, microservices, and database design</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">&#x1F4E1;</div>
+              <div>
+                <h4>IoT Development</h4>
+                <p>Connecting embedded hardware to intelligent cloud systems</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem; display:inline-flex;">
+            <span>Download CV</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tech Stack</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">&#x2699;&#xFE0F;</span>Backend &amp; APIs
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">&#x1F916;</span>AI / Machine Learning
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag accent">TensorFlow</span>
+            <span class="skill-tag accent">PyTorch</span>
+            <span class="skill-tag accent">Scikit-learn</span>
+            <span class="skill-tag accent">HuggingFace</span>
+            <span class="skill-tag accent">OpenCV</span>
+            <span class="skill-tag accent">NumPy</span>
+            <span class="skill-tag accent">Pandas</span>
+            <span class="skill-tag accent">MLflow</span>
+            <span class="skill-tag accent">LangChain</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">&#x1F4E1;</span>IoT &amp; Embedded
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag alt">Raspberry Pi</span>
+            <span class="skill-tag alt">Arduino</span>
+            <span class="skill-tag alt">ESP32</span>
+            <span class="skill-tag alt">MQTT</span>
+            <span class="skill-tag alt">LoRa</span>
+            <span class="skill-tag alt">Modbus</span>
+            <span class="skill-tag alt">AWS IoT</span>
+            <span class="skill-tag alt">Node-RED</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">&#x2601;&#xFE0F;</span>Cloud &amp; DevOps
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Nginx</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Backend Engineer</h3>
+                <p class="timeline-company">Company Name Inc.</p>
+              </div>
+              <span class="timeline-period">2023 – Present</span>
+            </div>
+            <p class="timeline-desc">Led the architecture and development of a microservices-based backend platform handling 1M+ daily requests. Integrated ML inference pipelines into production APIs and reduced latency by 40%.</p>
+            <div class="timeline-tags">
+              <span>Python</span><span>FastAPI</span><span>Docker</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">ML Engineer</h3>
+                <p class="timeline-company">AI Startup</p>
+              </div>
+              <span class="timeline-period">2022 – 2023</span>
+            </div>
+            <p class="timeline-desc">Developed and deployed computer vision models for object detection and anomaly detection. Built end-to-end MLOps pipeline from training to edge deployment on IoT devices.</p>
+            <div class="timeline-tags">
+              <span>PyTorch</span><span>TensorFlow</span><span>MLflow</span><span>Raspberry Pi</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">IoT Developer</h3>
+                <p class="timeline-company">Tech Consultancy</p>
+              </div>
+              <span class="timeline-period">2021 – 2022</span>
+            </div>
+            <p class="timeline-desc">Designed and deployed an industrial IoT monitoring system connecting 200+ sensors via MQTT and LoRa. Built real-time dashboards and automated alert systems.</p>
+            <div class="timeline-tags">
+              <span>ESP32</span><span>MQTT</span><span>Node-RED</span><span>InfluxDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-image-placeholder ai-bg">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="project-tag">AI/ML</span></div>
+            <h3 class="project-title">Intelligent Anomaly Detection System</h3>
+            <p class="project-desc">Real-time anomaly detection using LSTM neural networks for industrial sensor data streams. Achieves 94% accuracy with sub-100ms inference time.</p>
+            <div class="project-stack"><span>PyTorch</span><span>FastAPI</span><span>InfluxDB</span><span>Docker</span></div>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-category="iot">
+          <div class="project-image">
+            <div class="project-image-placeholder iot-bg">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="project-tag">IoT</span><span class="project-tag featured-tag">&#x2B50; Featured</span></div>
+            <h3 class="project-title">Smart Agricultural Monitoring Platform</h3>
+            <p class="project-desc">End-to-end IoT platform monitoring 500+ sensors across farms. LoRa-based mesh network, MQTT broker, cloud dashboard, and ML-powered crop health predictions.</p>
+            <div class="project-stack"><span>ESP32</span><span>LoRa</span><span>MQTT</span><span>Python</span><span>AWS IoT</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="project-image">
+            <div class="project-image-placeholder backend-bg">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="project-tag">Backend</span></div>
+            <h3 class="project-title">High-Performance API Gateway</h3>
+            <p class="project-desc">Microservices API gateway with rate limiting, JWT auth, request routing, and real-time analytics. Handles 50K+ req/sec with 99.9% uptime SLA.</p>
+            <div class="project-stack"><span>Go</span><span>Redis</span><span>PostgreSQL</span><span>Kubernetes</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-image-placeholder ai-bg">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="project-tag">AI/ML</span></div>
+            <h3 class="project-title">LLM-Powered Document Q&amp;A</h3>
+            <p class="project-desc">RAG-based document question-answering system using LangChain and vector databases. Supports multi-format documents and context-aware responses.</p>
+            <div class="project-stack"><span>LangChain</span><span>OpenAI</span><span>Pinecone</span><span>FastAPI</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="iot">
+          <div class="project-image">
+            <div class="project-image-placeholder iot-bg">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="project-tag">IoT</span></div>
+            <h3 class="project-title">Edge AI Energy Monitor</h3>
+            <p class="project-desc">TinyML-powered energy consumption monitoring on ESP32. Runs anomaly detection locally without cloud dependency, with OTA firmware updates.</p>
+            <div class="project-stack"><span>TensorFlow Lite</span><span>ESP32</span><span>C++</span><span>MQTT</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="project-image">
+            <div class="project-image-placeholder backend-bg">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="project-tag">Backend</span></div>
+            <h3 class="project-title">Real-time Data Pipeline</h3>
+            <p class="project-desc">Apache Kafka-based streaming data pipeline ingesting 10M+ events/day from IoT sensors. Includes stream processing, aggregation, and automated alerting.</p>
+            <div class="project-stack"><span>Kafka</span><span>Spark</span><span>Python</span><span>InfluxDB</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What They Say</span>
+        <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+      </div>
+      <div class="testimonials-slider" id="testimonials-slider">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+            <p class="testimonial-text">"Exceptional backend developer with a deep understanding of AI systems. Delivered our ML pipeline ahead of schedule with outstanding code quality. Would hire again without hesitation."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JD</div>
+              <div>
+                <p class="testimonial-name">John Doe</p>
+                <p class="testimonial-role">CTO, TechCorp</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+            <p class="testimonial-text">"The IoT monitoring platform they built transformed our manufacturing operations. Real-time insights, zero downtime, and the ML anomaly detection saved us thousands in equipment repairs."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SA</div>
+              <div>
+                <p class="testimonial-name">Sarah Anderson</p>
+                <p class="testimonial-role">Operations Director, IndustraCo</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+            <p class="testimonial-text">"A rare combination of backend engineering prowess and ML expertise. Their API gateway handles our peak loads flawlessly. Communication was excellent throughout the project."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MR</div>
+              <div>
+                <p class="testimonial-name">Michael Roberts</p>
+                <p class="testimonial-role">Founder, DataFlow AI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-btn" id="prev-testimonial" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="testimonial-dots" id="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="testimonial-btn" id="next-testimonial" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section blog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Articles</span>
+        <h2 class="section-title">Latest <span class="gradient-text">Blog Posts</span></h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card featured-blog">
+          <div class="blog-image-placeholder blog-ai">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-category">AI/ML</span><span class="blog-date">Aug 2026</span></div>
+            <h3 class="blog-title">Building Production-Ready ML Pipelines with MLflow and Docker</h3>
+            <p class="blog-excerpt">A deep dive into setting up reproducible ML experiment tracking, model versioning, and containerized deployment workflows for teams...</p>
+            <a href="#" class="blog-read-more">Read Article &#x2192;</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-image-placeholder blog-iot">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/></svg>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-category">IoT</span><span class="blog-date">Jul 2026</span></div>
+            <h3 class="blog-title">LoRa vs. MQTT: Choosing the Right Protocol for Your IoT Project</h3>
+            <p class="blog-excerpt">An in-depth comparison of LoRa and MQTT protocols for IoT applications, covering range, power, cost, and use-case suitability...</p>
+            <a href="#" class="blog-read-more">Read Article &#x2192;</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-image-placeholder blog-backend">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/></svg>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-category">Backend</span><span class="blog-date">Jun 2026</span></div>
+            <h3 class="blog-title">FastAPI vs. Flask: Performance Benchmarks at Scale</h3>
+            <p class="blog-excerpt">A rigorous benchmark comparison of FastAPI and Flask under high-concurrency load, plus tips for squeezing maximum performance...</p>
+            <a href="#" class="blog-read-more">Read Article &#x2192;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Collaborate</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hi? My inbox is always open.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:your.email@example.com" class="contact-value">your.email@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Your City, Indonesia</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub" id="social-github">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn" id="social-linkedin">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Kaggle" id="social-kaggle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .237.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.333z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok" id="social-tiktok">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.83a8.18 8.18 0 0 0 4.78 1.52V6.9a4.85 4.85 0 0 1-1.01-.21z"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">&#x00A9; 2026 Your Name. Built with passion &amp; precision.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+  <script src="script.js"></script>
+</body>
+</html>
