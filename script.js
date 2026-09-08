@@ -207,57 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =============================================
-  // Testimonials Slider
-  // =============================================
-  const track = document.getElementById('testimonials-track');
-  const dots = document.querySelectorAll('.dot');
-  let currentSlide = 0;
-  let autoSlideInterval;
-
-  function goToSlide(index) {
-    currentSlide = index;
-    track.style.transform = `translateX(-${index * 100}%)`;
-    dots.forEach((d, i) => d.classList.toggle('active', i === index));
-  }
-
-  function nextSlide() {
-    goToSlide((currentSlide + 1) % dots.length);
-  }
-  function prevSlide() {
-    goToSlide((currentSlide - 1 + dots.length) % dots.length);
-  }
-
-  document.getElementById('next-testimonial').addEventListener('click', () => {
-    nextSlide();
-    resetAutoSlide();
-  });
-  document.getElementById('prev-testimonial').addEventListener('click', () => {
-    prevSlide();
-    resetAutoSlide();
-  });
-
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      goToSlide(i);
-      resetAutoSlide();
-    });
-  });
-
-  function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 4000);
-  }
-  function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    startAutoSlide();
-  }
-  startAutoSlide();
-
-  // Pause on hover
-  const sliderEl = document.getElementById('testimonials-slider');
-  sliderEl.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-  sliderEl.addEventListener('mouseleave', startAutoSlide);
-
-  // =============================================
   // Contact Form
   // =============================================
   const form = document.getElementById('contact-form');
@@ -342,8 +291,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const filter = btn.getAttribute('data-filter');
 
       projectCards.forEach(card => {
-        const cat = card.getAttribute('data-category');
-        if (filter === 'all' || cat === filter) {
+        const cat = card.getAttribute('data-category') || '';
+        if (filter === 'all' || cat.split(' ').includes(filter)) {
           card.style.display = '';
           card.style.opacity = '1';
           card.style.transform = 'translateY(0)';
