@@ -351,9 +351,9 @@
 
         <div class="project-card featured" data-category="iot">
           <div class="project-image">
-            <img src="assets/projects/tf-luna-classifier/field-test.jpg" alt="Edge AI Vehicle Classifier — TF-Luna LiDAR Web Monitor Dashboard" class="featured-img" id="featured-img-tfluna" loading="lazy" />
+            <img src="assets/projects/tf-luna-classifier/portal-prototype.jpg" alt="Edge AI Vehicle Classifier — Dual TF-Luna LiDAR Field Portal" class="featured-img" id="featured-img-tfluna" loading="lazy" />
             <div class="project-overlay">
-              <button type="button" class="project-link lightbox-trigger" id="tfluna-lightbox-btn" data-img="assets/projects/tf-luna-classifier/field-test.jpg" data-caption="Real-time Web Monitor Dashboard — Vehicle Silhouette Profile, FWkNN Classification Result & Sensor Data" aria-label="View Full Image">
+              <button type="button" class="project-link lightbox-trigger" id="tfluna-lightbox-btn" data-img="assets/projects/tf-luna-classifier/portal-prototype.jpg" data-caption="Field Deployment — Physical Portal Gate with Dual TF-Luna LiDAR Sensors &amp; ESP32 Controller Box" aria-label="View Full Image">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
               </button>
               <a href="https://github.com/vanilalatte7/tf-luna-vehicle-classifier" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
@@ -371,19 +371,31 @@
             <p class="project-desc">Real-time vehicle classification system using dual Benewake TF-Luna LiDAR sensors and Feature-Weighted K-Nearest Neighbor (FWkNN) algorithm running entirely on an ESP32 microcontroller — no cloud dependency. Reconstructs vehicle silhouette profiles from ToF distance data, extracts 8 geometric features (length, height, slope, compactness, etc.), and classifies into 5 categories (City Car, Sedan, MPV, SUV, Pickup) with 91.67% accuracy. Includes WiFi-based real-time Web Monitor dashboard, ESP-NOW inter-device communication, and REMA signal filter with only ~5ms lag.</p>
 
             <div class="project-gallery-strip" id="tfluna-gallery-strip">
-              <button type="button" class="gallery-thumb active" data-src="assets/projects/tf-luna-classifier/field-test.jpg" data-caption="Real-time Web Monitor Dashboard — Vehicle Silhouette Profile, FWkNN Classification & Sensor Data" title="Web Dashboard">
+              <button type="button" class="gallery-thumb active" data-src="assets/projects/tf-luna-classifier/portal-prototype.jpg" data-caption="Field Deployment — Physical Portal Gate with Dual TF-Luna LiDAR Sensors &amp; ESP32 Controller Box" title="Field Prototype">
+                <img src="assets/projects/tf-luna-classifier/portal-prototype.jpg" alt="Field Prototype" />
+                <span>Prototype</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/system-diagram.png" data-caption="System Architecture Diagram — Dual TF-Luna LiDAR Sensors &rarr; ESP32 Edge Processor &rarr; FWkNN Classifier &rarr; LCD I2C Output" title="System Architecture">
+                <img src="assets/projects/tf-luna-classifier/system-diagram.png" alt="System Diagram" />
+                <span>Diagram</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/enclosure-hardware.png" data-caption="Hardware Enclosure Internals — ESP32 Microcontroller, LCD I2C Module, Expansion Board &amp; Battery Shield" title="Hardware Box">
+                <img src="assets/projects/tf-luna-classifier/enclosure-hardware.png" alt="Hardware Enclosure" />
+                <span>Hardware</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/sedan-classification.jpg" data-caption="Web Serial Monitor — Real-time Sedan Classification, Velocity Tracking &amp; Raw Telemetry Stream" title="Sedan Test">
+                <img src="assets/projects/tf-luna-classifier/sedan-classification.jpg" alt="Sedan Classification" />
+                <span>Sedan Log</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/silhouette-features.jpg" data-caption="Web Monitor Dashboard — 8 Extracted Geometric Features &amp; 100-Bin Normalized Vehicle Silhouette Curve" title="Features &amp; Silhouette">
+                <img src="assets/projects/tf-luna-classifier/silhouette-features.jpg" alt="Features &amp; Silhouette" />
+                <span>Features</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/field-test.jpg" data-caption="Real-time Web Monitor Dashboard — Live Vehicle Silhouette Profile &amp; Classification Telemetry" title="Web Dashboard">
                 <img src="assets/projects/tf-luna-classifier/field-test.jpg" alt="Web Dashboard" />
                 <span>Dashboard</span>
               </button>
-              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/hardware-setup-1.jpg" data-caption="Web Serial Monitor — Real-time LiDAR Data Acquisition, Feature Extraction & MPV Classification via ESP32" title="Serial Monitor">
-                <img src="assets/projects/tf-luna-classifier/hardware-setup-1.jpg" alt="Serial Monitor" />
-                <span>Serial Log</span>
-              </button>
-              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/hardware-setup-2.jpg" data-caption="Web Monitor — Live Classification Result with ESP-NOW Communication Status" title="Live Classification">
-                <img src="assets/projects/tf-luna-classifier/hardware-setup-2.jpg" alt="Live Classification" />
-                <span>Live Result</span>
-              </button>
-              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/confusion-matrix.png" data-caption="Confusion Matrix (K=3) — 91.67% Overall Accuracy across 5 Vehicle Classes" title="Confusion Matrix">
+              <button type="button" class="gallery-thumb" data-src="assets/projects/tf-luna-classifier/confusion-matrix.png" data-caption="Model Evaluation — Confusion Matrix (K=3) with 91.67% Overall Accuracy Across 5 Vehicle Classes" title="Confusion Matrix">
                 <img src="assets/projects/tf-luna-classifier/confusion-matrix.png" alt="Confusion Matrix" />
                 <span>Accuracy</span>
               </button>

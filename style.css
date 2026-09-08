@@ -872,12 +872,14 @@ body:hover .cursor { opacity: 1; }
 /* Project Gallery Strip */
 .project-gallery-strip {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0.85rem 0 0.5rem;
 }
 .gallery-thumb {
-  flex: 1;
-  height: 48px;
+  flex: 1 1 calc(14% - 0.5rem);
+  min-width: 64px;
+  height: 50px;
   border-radius: 8px;
   overflow: hidden;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
