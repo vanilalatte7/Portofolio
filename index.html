@@ -407,6 +407,57 @@
           </div>
         </div>
 
+
+        <div class="project-card featured" data-category="ai">
+          <div class="project-image">
+            <img src="assets/projects/apd-detection/violation-capture-1.jpg" alt="PPE Violation Detection" class="featured-img" id="featured-img-apd" loading="lazy" />
+            <div class="project-overlay">
+              <button type="button" class="project-link lightbox-trigger" id="apd-lightbox-btn" data-img="assets/projects/apd-detection/violation-capture-1.jpg" data-caption="Auto-Capture: No Helmet Violation Detected by YOLOv8 + CNN Classifier" aria-label="View Full Image">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </button>
+              <a href="#" class="project-link" aria-label="GitHub Repository (Coming Soon)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">AI / Computer Vision</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag featured-tag">&#x2B50; Featured</span>
+            </div>
+            <h3 class="project-title">PPE Violation Detection &amp; Monitoring System</h3>
+            <p class="project-desc">Real-time Personal Protective Equipment (PPE) violation detection system running on Raspberry Pi 4 with CCTV RTSP stream input. Uses YOLOv8 for object detection (person, helmet, shoes) and a CNN classifier for compliance verification. Automatically captures photographic evidence of violations (no helmet / non-safety shoes), triggers speaker alerts, and logs all incidents to MySQL &mdash; accessible via a Flask web dashboard with login-protected violation history and printable reports.</p>
+
+            <div class="project-gallery-strip" id="apd-gallery-strip">
+              <button type="button" class="gallery-thumb active" data-src="assets/projects/apd-detection/violation-capture-1.jpg" data-caption="Auto-Capture: No Helmet Violation &mdash; Real-time YOLOv8 Detection with Red Bounding Box Overlay" title="No Helmet Detection">
+                <img src="assets/projects/apd-detection/violation-capture-1.jpg" alt="No Helmet" />
+                <span>Violation 1</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/apd-detection/violation-capture-2.jpg" data-caption="Auto-Capture Evidence #2 &mdash; No Helmet Violation with AI Confidence Score Logged to Database" title="Violation 2">
+                <img src="assets/projects/apd-detection/violation-capture-2.jpg" alt="Violation 2" />
+                <span>Violation 2</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/apd-detection/violation-capture-3.jpg" data-caption="Auto-Capture Evidence #3 &mdash; Sequential Violation Capture Stored to MySQL History Table" title="Violation 3">
+                <img src="assets/projects/apd-detection/violation-capture-3.jpg" alt="Violation 3" />
+                <span>Violation 3</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/apd-detection/flowchart.png" data-caption="Detection Flowchart &mdash; CCTV Input to YOLOv8 Detection, CNN Classification, Alert, and MySQL Logging" title="Detection Flowchart">
+                <img src="assets/projects/apd-detection/flowchart.png" alt="Flowchart" />
+                <span>Flowchart</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/apd-detection/system-architecture.png" data-caption="System Architecture &mdash; CCTV to DVR to Router to Raspberry Pi 4 running YOLOv8 plus CNN, then to Web Dashboard and Speaker" title="Architecture">
+                <img src="assets/projects/apd-detection/system-architecture.png" alt="Architecture" />
+                <span>Architecture</span>
+              </button>
+            </div>
+
+            <div class="project-stack">
+              <span>Python</span><span>YOLOv8</span><span>CNN</span><span>Raspberry Pi 4</span><span>Flask</span><span>MySQL</span><span>OpenCV</span><span>RTSP</span>
+            </div>
+          </div>
+        </div>
+
         <div class="project-card" data-category="backend">
           <div class="project-image">
             <div class="project-image-placeholder backend-bg">
