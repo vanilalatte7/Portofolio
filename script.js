@@ -11,12 +11,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const cursorFollower = document.getElementById('cursor-follower');
   let mouseX = 0, mouseY = 0;
   let followerX = 0, followerY = 0;
+  let cursorVisible = false;
 
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
     cursor.style.left = mouseX + 'px';
     cursor.style.top = mouseY + 'px';
+
+    // Show cursor only after first movement
+    if (!cursorVisible) {
+      cursorVisible = true;
+      cursor.style.opacity = '1';
+      cursorFollower.style.opacity = '1';
+      followerX = mouseX;
+      followerY = mouseY;
+    }
+  });
+
+  // Hide cursor when mouse leaves window
+  document.addEventListener('mouseleave', () => {
+    cursor.style.opacity = '0';
+    cursorFollower.style.opacity = '0';
+  });
+  document.addEventListener('mouseenter', () => {
+    if (cursorVisible) {
+      cursor.style.opacity = '1';
+      cursorFollower.style.opacity = '1';
+    }
   });
 
   function animateFollower() {

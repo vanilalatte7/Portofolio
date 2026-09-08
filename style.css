@@ -86,8 +86,11 @@ strong { color: var(--text-primary); }
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s, width 0.2s, height 0.2s;
+  transition: transform 0.1s, width 0.2s, height 0.2s, opacity 0.3s;
   mix-blend-mode: screen;
+  opacity: 0;
+  left: -100px;
+  top: -100px;
 }
 .cursor-follower {
   width: 36px; height: 36px;
@@ -97,9 +100,16 @@ strong { color: var(--text-primary); }
   pointer-events: none;
   z-index: 9998;
   transform: translate(-50%, -50%);
-  transition: all 0.15s ease;
+  transition: left 0.08s ease, top 0.08s ease, width 0.2s, height 0.2s, border-color 0.2s, opacity 0.3s;
+  opacity: 0;
+  left: -100px;
+  top: -100px;
 }
-body:hover .cursor { opacity: 1; }
+a, button, input, textarea, select, label,
+.skill-tag, .filter-btn, .gallery-thumb, .lightbox-trigger,
+.project-link, .nav-link, .nav-logo, .social-link, .hamburger {
+  cursor: none;
+}
 
 /* Utility */
 .container {
