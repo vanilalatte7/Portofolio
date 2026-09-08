@@ -184,16 +184,15 @@
             <span class="skill-cat-icon">&#x1F916;</span>AI / Machine Learning
           </h3>
           <div class="skill-tags">
-            <span class="skill-tag accent">YOLOv8</span>
-            <span class="skill-tag accent">ArcFace</span>
-            <span class="skill-tag accent">ByteTrack</span>
-            <span class="skill-tag accent">OSNet (Person Re-ID)</span>
-            <span class="skill-tag accent">PyTorch</span>
-            <span class="skill-tag accent">OpenCV</span>
             <span class="skill-tag accent">TensorFlow</span>
+            <span class="skill-tag accent">PyTorch</span>
             <span class="skill-tag accent">Scikit-learn</span>
+            <span class="skill-tag accent">HuggingFace</span>
+            <span class="skill-tag accent">OpenCV</span>
             <span class="skill-tag accent">NumPy</span>
             <span class="skill-tag accent">Pandas</span>
+            <span class="skill-tag accent">MLflow</span>
+            <span class="skill-tag accent">LangChain</span>
           </div>
         </div>
         <div class="skill-category">
@@ -306,14 +305,12 @@
 
         <div class="project-card featured" data-category="ai">
           <div class="project-image">
-            <div class="project-image-placeholder ai-bg">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/><path d="M12 14v3"/></svg>
-            </div>
+            <img src="bilqis/detection.png" alt="AI Multi-Biometric Server Room Security System" class="featured-img" id="featured-img" loading="lazy" />
             <div class="project-overlay">
-              <a href="https://github.com/vanilalatte7/Portofolio" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Project">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-              <a href="https://github.com/vanilalatte7" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+              <button type="button" class="project-link lightbox-trigger" id="featured-lightbox-btn" data-img="bilqis/detection.png" data-caption="Deteksi Real-time AI (YOLOv8n + ArcFace + Person Re-ID)" aria-label="Lihat Gambar Penuh">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </button>
+              <a href="https://github.com/vanilalatte7/Portofolio" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               </a>
             </div>
@@ -321,21 +318,33 @@
           <div class="project-body">
             <div class="project-tags">
               <span class="project-tag">AI / Computer Vision</span>
-              <span class="project-tag">IoT &amp; Security</span>
+              <span class="project-tag">IoT</span>
               <span class="project-tag featured-tag">&#x2B50; Featured</span>
             </div>
             <h3 class="project-title">AI Multi-Biometric Server Room Security System</h3>
-            <p class="project-desc">
-              Sistem keamanan akses fisik ruang server yang memadukan verifikasi awal sensor sidik jari AS608 dengan 4 tahapan Computer Vision: deteksi manusia <strong>YOLOv8</strong>, pelacakan pergerakan <strong>ByteTrack</strong>, kontinuitas identitas tubuh <strong>Person Re-ID (OSNet)</strong>, dan pengenalan wajah presisi tinggi <strong>ArcFace</strong>. Terhubung dengan mikrokontroler ESP32 dan aktuator solenoid lock, sistem berhasil mencegah upaya tailgating dengan akurasi pengenalan wajah 100% dan web monitoring log real-time MySQL.
-            </p>
+            <p class="project-desc">Sistem keamanan fisik ruang server multi-biometrik terintegrasi berbasis Fingerprint AS608 dan computer vision (YOLOv8n, ByteTrack, Person Re-ID OSNet, dan ArcFace) dengan aktuator Solenoid Lock via ESP32. Mencapai akurasi pengenalan wajah 100% (1–2m), F1-Score optimal 82%, serta sukses mencegah upaya tailgating dengan web monitoring real-time.</p>
+            
+            <div class="project-gallery-strip" id="project-gallery-strip">
+              <button type="button" class="gallery-thumb active" data-src="bilqis/detection.png" data-caption="Deteksi Real-time AI (YOLOv8n + ArcFace + Person Re-ID)" title="AI Detection UI">
+                <img src="bilqis/detection.png" alt="AI Detection" />
+                <span>AI Detection</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="bilqis/prototype.jpeg" data-caption="Prototype Fisik Pintu Ruang Server (ESP32, Solenoid Lock, CCTV Dome, AS608)" title="Hardware Prototype">
+                <img src="bilqis/prototype.jpeg" alt="Hardware Prototype" />
+                <span>Hardware</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="bilqis/architecture.png" data-caption="Diagram Arsitektur Sistem Terintegrasi" title="Architecture Diagram">
+                <img src="bilqis/architecture.png" alt="Architecture" />
+                <span>Arsitektur</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="bilqis/dashboard.png" data-caption="Dashboard Web Monitoring Akses Real-time &amp; Log MySQL" title="Monitoring Dashboard">
+                <img src="bilqis/dashboard.png" alt="Dashboard" />
+                <span>Dashboard</span>
+              </button>
+            </div>
+
             <div class="project-stack">
-              <span>YOLOv8</span>
-              <span>ByteTrack</span>
-              <span>OSNet (Re-ID)</span>
-              <span>ArcFace</span>
-              <span>ESP32</span>
-              <span>Python</span>
-              <span>MySQL</span>
+              <span>Python</span><span>YOLOv8</span><span>ArcFace</span><span>ByteTrack</span><span>OSNet</span><span>ESP32</span><span>MySQL</span>
             </div>
           </div>
         </div>
@@ -650,7 +659,15 @@
         </div>
       </div>
     </div>
-  </footer>
+  <!-- Lightbox Modal for Project Images -->
+  <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Tutup modal">&times;</button>
+      <img src="" alt="" id="lightbox-img" class="lightbox-image" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
 
   <div id="cursor" class="cursor"></div>
   <div id="cursor-follower" class="cursor-follower"></div>
