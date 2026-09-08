@@ -458,25 +458,49 @@
           </div>
         </div>
 
-        <div class="project-card" data-category="backend">
+        <div class="project-card featured" data-category="ai">
           <div class="project-image">
-            <div class="project-image-placeholder backend-bg">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            </div>
+            <img src="assets/projects/mediapipe-stroke-monitor/hand-sign-history-detail.png" alt="StrokeMonitor — AI Hand Gesture Recognition System" class="featured-img" id="featured-img-strokemonitor" loading="lazy" />
             <div class="project-overlay">
-              <a href="#" class="project-link" aria-label="View project">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-              <a href="#" class="project-link" aria-label="GitHub">
+              <button type="button" class="project-link lightbox-trigger" id="strokemonitor-lightbox-btn" data-img="assets/projects/mediapipe-stroke-monitor/hand-sign-history-detail.png" data-caption="Activity History &amp; AI Landmark Tracking — Real-time MediaPipe Hand Gesture Recognition with 99.67% Confidence" aria-label="View Full Image">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </button>
+              <a href="https://github.com/vanilalatte7/Mediapipe" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               </a>
             </div>
           </div>
           <div class="project-body">
-            <div class="project-tags"><span class="project-tag">Backend</span></div>
-            <h3 class="project-title">High-Performance API Gateway</h3>
-            <p class="project-desc">Microservices API gateway with rate limiting, JWT auth, request routing, and real-time analytics. Handles 50K+ req/sec with 99.9% uptime SLA.</p>
-            <div class="project-stack"><span>Go</span><span>Redis</span><span>PostgreSQL</span><span>Kubernetes</span></div>
+            <div class="project-tags">
+              <span class="project-tag">AI / Computer Vision</span>
+              <span class="project-tag">Healthcare IoT</span>
+              <span class="project-tag featured-tag">&#x2B50; Featured</span>
+            </div>
+            <h3 class="project-title">StrokeMonitor — AI Hand Gesture Patient Monitoring System</h3>
+            <p class="project-desc">Assistive computer vision and healthcare IoT monitoring platform designed for paralyzed and stroke patients with speech and motor impairments. Leverages Google MediaPipe Hands for 21 3D hand landmark tracking and deep learning (LSTM &amp; TensorFlow Lite) to classify dynamic hand gestures into essential patient requests (Makan, Minum, Toilet, Tidur, Pindah Posisi) with 99.67% accuracy. Deployed on a Raspberry Pi 4 edge hub with FastAPI, Firebase Firestore real-time cloud synchronization, and a dedicated caregiver mobile app featuring instant push alerts, customizable gesture bindings, and verified visual audit logs.</p>
+
+            <div class="project-gallery-strip" id="strokemonitor-gallery-strip">
+              <button type="button" class="gallery-thumb active" data-src="assets/projects/mediapipe-stroke-monitor/hand-sign-history-detail.png" data-caption="Activity History &amp; AI Landmark Verification &mdash; Real-time MediaPipe 21-Point Hand Landmark Tracking Overlay with 99.67% Classification Confidence" title="AI Landmark &amp; Verification">
+                <img src="assets/projects/mediapipe-stroke-monitor/hand-sign-history-detail.png" alt="AI Landmark Tracking" />
+                <span>AI Landmark</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/mediapipe-stroke-monitor/caregiver-dashboard.jpg" data-caption="Caregiver Mobile Dashboard &mdash; Real-time Patient Request Feed &amp; Categorized Quick Alert Grid (Makan, Minum, Toilet, Tidur)" title="Caregiver App Dashboard">
+                <img src="assets/projects/mediapipe-stroke-monitor/caregiver-dashboard.jpg" alt="Caregiver Mobile Dashboard" />
+                <span>Dashboard</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/mediapipe-stroke-monitor/gesture-settings.jpg" data-caption="Custom Gesture Mapping &mdash; Personalized Patient Hand Sign Configuration Screen for Multiple Essential Needs" title="Gesture Settings">
+                <img src="assets/projects/mediapipe-stroke-monitor/gesture-settings.jpg" alt="Gesture Settings Screen" />
+                <span>Gesture Config</span>
+              </button>
+              <button type="button" class="gallery-thumb" data-src="assets/projects/mediapipe-stroke-monitor/app-login.jpg" data-caption="Caregiver Mobile Authentication &mdash; Secure Role-Based Access for Caregivers and Medical Staff" title="Caregiver Mobile Login">
+                <img src="assets/projects/mediapipe-stroke-monitor/app-login.jpg" alt="Caregiver Login Screen" />
+                <span>Mobile Auth</span>
+              </button>
+            </div>
+
+            <div class="project-stack">
+              <span>Python</span><span>MediaPipe</span><span>TensorFlow Lite</span><span>LSTM</span><span>FastAPI</span><span>Firebase Firestore</span><span>Raspberry Pi 4</span><span>OpenCV</span><span>Flutter / Mobile</span>
+            </div>
           </div>
         </div>
 
