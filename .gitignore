@@ -1,1 +1,6 @@
-﻿*.docx
+# Ignore documents and local files
+*.docx
+bilqis/
+sistem monitoring ruang akses/
+.DS_Store
+Thumbs.db
