@@ -329,39 +329,56 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(createParticle, 600);
 
   // =============================================
-  // Project Image Gallery & Lightbox
+  // Project Image Gallery & Lightbox (Multi-Card)
   // =============================================
-  const galleryThumbs = document.querySelectorAll('.gallery-thumb');
-  const featuredImg = document.getElementById('featured-img');
-  const featuredLightboxBtn = document.getElementById('featured-lightbox-btn');
   const lightboxModal = document.getElementById('lightbox-modal');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCaption = document.getElementById('lightbox-caption');
   const lightboxClose = document.getElementById('lightbox-close');
   const lightboxBackdrop = document.getElementById('lightbox-backdrop');
 
-  if (galleryThumbs.length && featuredImg) {
-    galleryThumbs.forEach(thumb => {
+  // Wire up each gallery strip independently
+  document.querySelectorAll('.project-gallery-strip').forEach(strip => {
+    const card = strip.closest('.project-card');
+    if (!card) return;
+
+    const cardFeaturedImg = card.querySelector('.featured-img');
+    const cardLightboxBtn = card.querySelector('.lightbox-trigger');
+    const thumbs = strip.querySelectorAll('.gallery-thumb');
+
+    thumbs.forEach(thumb => {
       thumb.addEventListener('click', () => {
-        galleryThumbs.forEach(t => t.classList.remove('active'));
+        thumbs.forEach(t => t.classList.remove('active'));
         thumb.classList.add('active');
 
         const newSrc = thumb.getAttribute('data-src');
         const newCaption = thumb.getAttribute('data-caption');
 
-        featuredImg.style.opacity = '0';
-        setTimeout(() => {
-          featuredImg.src = newSrc;
-          featuredImg.style.opacity = '1';
-        }, 150);
+        if (cardFeaturedImg) {
+          cardFeaturedImg.style.opacity = '0';
+          setTimeout(() => {
+            cardFeaturedImg.src = newSrc;
+            cardFeaturedImg.style.opacity = '1';
+          }, 150);
+        }
 
-        if (featuredLightboxBtn) {
-          featuredLightboxBtn.setAttribute('data-img', newSrc);
-          featuredLightboxBtn.setAttribute('data-caption', newCaption);
+        if (cardLightboxBtn) {
+          cardLightboxBtn.setAttribute('data-img', newSrc);
+          cardLightboxBtn.setAttribute('data-caption', newCaption);
         }
       });
     });
-  }
+
+    // Click on featured image opens lightbox
+    if (cardFeaturedImg) {
+      cardFeaturedImg.style.cursor = 'pointer';
+      cardFeaturedImg.addEventListener('click', () => {
+        const activeThumb = strip.querySelector('.gallery-thumb.active');
+        const caption = activeThumb ? activeThumb.getAttribute('data-caption') : '';
+        openLightbox(cardFeaturedImg.src, caption);
+      });
+    }
+  });
 
   function openLightbox(src, caption) {
     if (!lightboxModal || !lightboxImg) return;
@@ -387,15 +404,6 @@ document.addEventListener('DOMContentLoaded', () => {
       openLightbox(src, caption);
     });
   });
-
-  if (featuredImg) {
-    featuredImg.style.cursor = 'pointer';
-    featuredImg.addEventListener('click', () => {
-      const activeThumb = document.querySelector('.gallery-thumb.active');
-      const caption = activeThumb ? activeThumb.getAttribute('data-caption') : '';
-      openLightbox(featuredImg.src, caption);
-    });
-  }
 
   if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
   if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
