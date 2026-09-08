@@ -104,10 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // =============================================
   const subtitleEl = document.getElementById('typed-subtitle');
   const roles = [
-    'Backend Engineer',
-    'AI / ML Developer',
-    'IoT Systems Architect',
-    'API & Microservices Expert',
+    'AI & Computer Vision Developer',
+    'IoT & Embedded Systems Engineer',
+    'Digital Telecommunication Engineer',
+    'Network & Security Enthusiast',
   ];
   let roleIndex = 0, charIndex = 0, isDeleting = false;
 
